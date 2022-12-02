@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 170vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", "cursive";
+  text-transform: uppercase;
+}
+
+.card-1 {
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.card-3 {
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 17rem;
+  height: 28rem;
+  box-sizing: border-box;
+  padding: 0 3.3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+button {
+  margin: 1.6rem 0 0.8rem 0;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 2rem;
+  border-style: none;
+  mix-blend-mode: screen;
+}
+button:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.29rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+/*  Media Query Added */
+
+
+@media only screen and (max-width: 400px) {
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card-1 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .card-3 {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    height: 26rem;
+  }
+}
