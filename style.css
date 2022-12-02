@@ -4,7 +4,7 @@
 }
 
 body {
-  height: 170vh;
+  height: 100vh;
   width: 100vw;
   display: grid;
   place-items: center;
@@ -76,11 +76,12 @@ p {
   background-color: hsl(179, 100%, 13%);
 }
 
-
 /*  Media Query Added */
 
-
 @media only screen and (max-width: 400px) {
+  body {
+    height: 170vh;
+  }
 
   .cards {
     flex-direction: column;
