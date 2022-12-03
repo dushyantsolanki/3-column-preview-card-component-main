@@ -20,6 +20,7 @@ body {
 h2 {
   font-family: "Big Shoulders Display", "cursive";
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 .card-1 {
   border-bottom-left-radius: 0.5rem;
